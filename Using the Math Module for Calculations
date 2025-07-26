@@ -1,0 +1,18 @@
+import math
+
+# Step 1: Ask the user for a number
+num = float(input("Enter a positive number: "))
+
+# Step 2: Use math module to calculate required values
+if num > 0:
+    sqrt_result = math.sqrt(num)
+    log_result = math.log(num)       # Natural log (base e)
+    sine_result = math.sin(num)      # Sine of number in radians
+
+    # Step 3: Display results
+    print("\n--- Results ---")
+    print(f"Square root of {num} is: {sqrt_result}")
+    print(f"Natural logarithm of {num} is: {log_result}")
+    print(f"Sine of {num} (in radians) is: {sine_result}")
+else:
+    print("Error: Please enter a number greater than 0 for accurate calculations.")
